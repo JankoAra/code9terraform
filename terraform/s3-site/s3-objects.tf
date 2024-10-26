@@ -17,7 +17,7 @@ resource "aws_s3_object" "css" {
   source = "templates/styles.css"
 }
 # Upload styles.css to s3 bucket
-resource "aws_s3_object" "css" {
+resource "aws_s3_object" "css1" {
   bucket = aws_s3_bucket.my-static-website.id
   key    = "janko.css"
   source = "templates/janko.css"
